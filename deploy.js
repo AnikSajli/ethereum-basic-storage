@@ -47,11 +47,11 @@ async function main() {
     // console.log(sentTxResponse);
 
     // Get number
-    const currentFavoriteNumber = await contract.retirve();
+    const currentFavoriteNumber = await contract.retrive();
     console.log("Current favorite number: " + currentFavoriteNumber.toString());
     const storeTransactionResponse = await contract.store("5");
     const storeTransactionReceipt = await storeTransactionResponse.wait(1);
-    const updatedFavoriteNumber = await contract.retirve();
+    const updatedFavoriteNumber = await contract.retrive();
     console.log("Updated favorite number: " + updatedFavoriteNumber);
 }
 
